@@ -1,0 +1,49 @@
+<html>
+<head></head>
+<body>
+<div class='video'>
+  <script src="https://use.fontawesome.com/20603b964f.js"></script>
+  <script type="text/javascript" src="https://content.jwplatform.com/libraries/LJ361JYj.js"></script>
+  <script type="text/javascript">
+    jwplayer.key = 'ypdL3Acgwp4Uh2/LDE9dYh3W/EPwDMuA2yid4ytssfI=';
+  </script>
+  <div id="myElement"></div>
+  <script type="text/javascript">
+    jwplayer("myElement").setup({
+      image: "https://lh3.googleusercontent.com/-Zya-2bMFdFo/Y8diBRpfaeI/AAAAAAAABr8/0c2p0meNiQElrG5P0zZJ-awoyiywopcOwCNcBGAsYHQ/s1600/mov2.jpg",
+      height: window.innerHeight,
+      autostart: false,
+      file : 'https://hls03.bigfiles.org/hls2/02/00005/v8a4hgo8ura0_x/index-v1-a1.m3u8?t=L5WZzzaeNMv9P2BIydQcebSFBD5H2pb3d7XZj-dw4Hs&s=1674104693&e=180&f=27982&srv=127.0.0.1',
+      title: 'MOV2.ME',
+      description: 'Wellcome to mov2.ME',
+      aboutlink: 'https://www.mov2.me/',
+      tracks:[{"file":"https://firebasestorage.googleapis.com/v0/b/mov2-4b5b4.appspot.com/o/Hollywood%20-%20All%2FThe%20Batman%2FEn.srt?alt=media&token=12d14368-c23d-468e-9276-78fef7765648",
+        "label":"English","kind":"captions","default":"true"},
+        
+        {"file":"https://firebasestorage.googleapis.com/v0/b/mov2-4b5b4.appspot.com/o/Hollywood%20-%20All%2FThe%20Batman%2FKm.srt?alt=media&token=938a3b91-1ad3-49d0-84bf-7937fd2513c3",
+        "label":"Khmer","kind":"captions",},
+      
+        {"file":"https://firebasestorage.googleapis.com/v0/b/mov2-4b5b4.appspot.com/o/Hollywood%20-%20All%2FThe%20Batman%2FEn.th.srt?alt=media&token=284660b4-2d2a-4a09-8a63-c9a1bbf4652a",
+        "label":"Thai","kind":"captions",},
+
+        {"file":"https://firebasestorage.googleapis.com/v0/b/mov2-4b5b4.appspot.com/o/Hollywood%20-%20All%2FThe%20Batman%2FEn.vi.srt?alt=media&token=0bef062b-700e-4939-9e4c-8438e3cfe7b4",
+        "label":"Veatnamse","kind":"captions",}],
+      captions: {color: '#ffb800',fontSize: 30,backgroundOpacity: 0},
+      sharing: {
+        sites: ['facebook','twitter','tumblr','googleplus',{icon: '//support-static.jwplayer.com/images/awesome.svg', src: 'http://www.jwplayer.com/?', label:'jwplayer'}],
+        code: encodeURI("<iframe src='<?php echo $sharing;?>' width='480' height='320'></iframe>"),
+        link: "<?php echo $sharing;?>"
+      }
+    })
+  </script>
+</div>
+<style>
+html,body,
+#container {margin: 0;padding: 0;width: 100%;height: 100%;background: #000;color: #fff;overflow: hidden;}
+#myElement {height: 100vh !important;}
+body {height: 100vh;}
+#container {position: absolute;text-align: center}
+video {outline: 0}
+</style>
+</body>
+</html>
